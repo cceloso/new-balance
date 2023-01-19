@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'hero-heading': ['Playfair Display', 'serif']
+    }
   },
   plugins: [],
 }

@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "country-flag-icons": "^1.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
