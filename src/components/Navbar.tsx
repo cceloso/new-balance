@@ -5,7 +5,7 @@ import SearchBar from './SearchBar'
 
 const Navbar = () => {
   return (
-    <div className='px-4 py-6 font-semibold'>
+    <div className='p-6 font-semibold'>
     <div className='max-w-[1480px] mx-auto grid grid-cols-2'>
       <div className='flex items-center'>
         <img className='w-[3.5rem] mr-8' src={Logo} alt="New Balance Logo" />

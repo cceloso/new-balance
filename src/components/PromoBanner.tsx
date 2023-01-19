@@ -4,7 +4,7 @@ import Link from "./Link"
 
 const PromoBanner = () => {
   return (
-    <div className='w-full bg-[#EFEFEF] px-4 py-2 text-sm font-semibold'>
+    <div className='w-full bg-[#EFEFEF] px-6 py-2 text-sm font-semibold'>
       <div className='max-w-[1480px] mx-auto grid lg:grid-cols-4'>
         <div></div>
         <div className='bg-yellow mx-auto col-span-2 text-center'>

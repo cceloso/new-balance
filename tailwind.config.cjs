@@ -10,5 +10,7 @@ module.exports = {
       'hero-heading': ['Playfair Display', 'serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
