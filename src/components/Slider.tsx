@@ -3,13 +3,13 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 const Slider = () => {
   const slideLeft = () => {
-    const slider: HTMLElement = document.getElementById('slider');
-    slider.scrollLeft = slider.scrollLeft - slider.scrollWidth / 3;
+    const slider: HTMLElement = document.getElementById('slider')!
+    slider.scrollLeft = slider.scrollLeft - slider.scrollWidth / 3
   }
 
   const slideRight = () => {
-    const slider: HTMLElement = document.getElementById('slider');
-    slider.scrollLeft = slider.scrollLeft + slider.scrollWidth / 3;
+    const slider: HTMLElement = document.getElementById('slider')!
+    slider.scrollLeft = slider.scrollLeft + slider.scrollWidth / 3
   }
 
   return (

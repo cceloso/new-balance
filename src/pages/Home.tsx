@@ -1,12 +1,14 @@
+import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import ProductList from '../components/ProductList'
 import PromoBanner from '../components/PromoBanner'
+import SignUpBanner from '../components/SignUpBanner'
 import Slider from '../components/Slider'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <PromoBanner />
       <Navbar />
       <Hero />
@@ -15,7 +17,9 @@ const Home = () => {
         <span className='font-semibold text-5xl md:text-6xl font-hero-heading'>IU-Selection</span>
       </div>
       <ProductList />
-    </div>
+      <SignUpBanner />
+      <Footer />
+    </>
   )
 }
 

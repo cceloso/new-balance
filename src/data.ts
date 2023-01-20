@@ -13,6 +13,73 @@ export const sliderItems = [
   }
 ];
 
+export const footerLinks: IFooterColumn[] = [
+  {
+    heading: 'Help',
+    items: [
+      {
+        label: 'Contact Us',
+        link: ''
+      },
+      {
+        label: 'FAQ',
+        link: ''
+      },
+      {
+        label: 'Size Guide',
+        link: ''
+      },
+    ]
+  },
+  {
+    heading: 'Shop',
+    items: [
+      {
+        label: 'Order Status',
+        link: ''
+      },
+      {
+        label: 'Shipping Information',
+        link: ''
+      },
+      {
+        label: 'Returns',
+        link: ''
+      },
+    ]
+  },
+  {
+    heading: 'About Us',
+    items: [
+      {
+        label: 'Inside NB',
+        link: ''
+      },
+      {
+        label: 'Responsible Leadership',
+        link: ''
+      },
+      {
+        label: 'NB Gives Back',
+        link: ''
+      },
+      {
+        label: 'The TRACK at New Balance',
+        link: ''
+      },
+    ]
+  },
+  {
+    heading: 'For You',
+    items: [
+      {
+        label: 'My Account',
+        link: ''
+      },
+    ]
+  },
+];
+
 export const products: Product[] = [
   {
     id: "UXC72V1-39940",
