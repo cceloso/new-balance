@@ -1,10 +1,16 @@
-import React from 'react'
+import { products } from "../data"
+import Container from "./Container"
+import Product from "./Product"
 
 const ProductList = () => {
   return (
-    <div className='flex flex-col items-center'>
-      <span className='font-semibold text-6xl mb-8 font-hero-heading py-6'>IU-Selection</span>
-    </div>
+    <Container>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-6'>
+        {products.map(item => (
+          <Product item={item} key={item.id} />
+        ))}
+      </div>
+    </Container>
   )
 }
 

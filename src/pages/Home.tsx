@@ -11,6 +11,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Slider />
+      <div className='flex flex-col items-center mb-8 py-6'>
+        <span className='font-semibold text-5xl md:text-6xl font-hero-heading'>IU-Selection</span>
+      </div>
       <ProductList />
     </div>
   )
