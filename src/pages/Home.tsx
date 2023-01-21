@@ -9,8 +9,6 @@ import Slider from '../components/Slider'
 const Home = () => {
   return (
     <>
-      <PromoBanner />
-      <Navbar />
       <Hero />
       <Slider />
       <div className='flex flex-col items-center mb-8 py-6'>
