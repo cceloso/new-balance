@@ -9,7 +9,8 @@ function App() {
   return (
     <>
       <PromoBanner />
-      <Navbar />      
+      <Navbar />     
+      {/* <Home />  */}
       <Product />
       <SignUpBanner />
       <Footer />
