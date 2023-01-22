@@ -1,6 +1,6 @@
 import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline"
 import Icon from "./Icon"
-import Link from "./Link"
+import CustomLink from "./CustomLink"
 
 interface IProductProps {
   item: Product;
@@ -24,7 +24,7 @@ const Product = (props: IProductProps) => {
         </div>
       </div>
       <div className='flex items-center justify-between font-bold'>
-        <Link text={product.name} />
+        <CustomLink text={product.name} />
         <span>S${product.price}</span>
       </div>
       <span className='text-sm'>{product.categories[0]}</span>

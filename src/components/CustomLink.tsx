@@ -4,7 +4,7 @@ interface ILinkProps {
   styles?: string;
 }
 
-const Link = (props: ILinkProps) => {
+const CustomLink = (props: ILinkProps) => {
   const underlineColor = props.underlineColor ? 'hover:border-nb-red' : 'hover:border-black';
   const styles = props.styles ? props.styles : '';
   console.log(underlineColor);
@@ -16,4 +16,4 @@ const Link = (props: ILinkProps) => {
   )
 }
 
-export default Link
+export default CustomLink

@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <Container styles='flex flex-column lg:flex-row grid grid-cols-2 lg:grid-cols-6 text-sm py-12'>
       <>
-        {footerLinks.map(col => (
-          <FooterColumn col={col} />
+        {footerLinks.map((col, index) => (
+          <FooterColumn col={col} key={index} />
         ))}
         <div className='col-span-2 lg:pl-36 mt-4 lg:mt-0'>
           <img className='w-[3.5rem]' src={Logo} alt="New Balance Logo" />

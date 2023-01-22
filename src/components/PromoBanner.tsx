@@ -1,6 +1,6 @@
 import { MapPinIcon } from "@heroicons/react/24/outline"
 import { PH } from 'country-flag-icons/react/3x2'
-import Link from "./Link"
+import CustomLink from "./CustomLink"
 
 const PromoBanner = () => {
   return (
@@ -13,7 +13,7 @@ const PromoBanner = () => {
         <div className='hidden lg:flex items-center justify-end'>
           <div className="mx-4 flex">
             <MapPinIcon className="w-4 mr-1" />
-            <Link text="Find a Store" />
+            <CustomLink text="Find a Store" />
           </div>
           <div className="flex">
             <PH className="w-6 mr-2" />

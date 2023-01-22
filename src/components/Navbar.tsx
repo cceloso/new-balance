@@ -1,7 +1,8 @@
 import Logo from '../assets/new-balance-logo.svg'
 import { UserIcon, ShoppingCartIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Link from './Link'
+import CustomLink from './CustomLink'
 import SearchBar from './SearchBar'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const toggleMobileNav = () => {
@@ -37,18 +38,19 @@ const Navbar = () => {
     <div className='p-6 font-semibold relative transition-all duration-300' id='mainContainer'>
       <div className='max-w-[1480px] mx-auto grid grid-cols-2'>
         <div className='flex flex-col lg:flex-row lg:items-center'>
-          <img className='w-[3.5rem] mr-8' src={Logo} alt="New Balance Logo" />
-          {/* <ul className='hidden lg:flex flex-row text-sm font-bold'> */}
+          <Link to='/'>
+            <img className='w-[3.5rem] mr-8 cursor-pointer' src={Logo} alt="New Balance Logo" />
+          </Link>
           <ul className='hidden lg:flex flex-col lg:flex-row text-sm font-bold'>
-            <Link text='New' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
-            <Link text='Men' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
-            <Link text='Women' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
-            <Link text='Kids' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
+            <CustomLink text='New' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
+            <CustomLink text='Men' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
+            <CustomLink text='Women' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
+            <CustomLink text='Kids' underlineColor='nb-red' styles='mt-8 lg:mr-6 lg:mt-0' />
             <div className='hidden mt-12 flex items-center font-normal' id='mobileLogin'>
               <UserIcon className='w-6 h-6 mr-4' />
-              <Link text='Log in' />
+              <CustomLink text='Log in' />
               <span className='text-gray-400 text-sm mx-2'>|</span>
-              <Link text='Join' />
+              <CustomLink text='Join' />
             </div>
           </ul>
         </div>
@@ -56,9 +58,9 @@ const Navbar = () => {
           <SearchBar styles='mr-8 hidden lg:flex' />
           <div className='mr-8 hidden lg:flex items-center'>
             <UserIcon className='w-6 h-6 mr-1' />
-            <Link text='Log in' />
+            <CustomLink text='Log in' />
             <span className='text-gray-400 text-sm mx-2'>|</span>
-            <Link text='Join' />
+            <CustomLink text='Join' />
           </div>
           <div className='flex lg:items-center'>
             <ShoppingCartIcon className='w-6 h-6 cursor-pointer' id='cartIcon' />
