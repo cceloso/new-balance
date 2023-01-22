@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import PromoBanner from "./components/PromoBanner"
@@ -9,7 +9,7 @@ import Product from "./pages/Products/Product"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <PromoBanner />
       <Navbar />
@@ -19,7 +19,7 @@ function App() {
       </Routes>
       <SignUpBanner />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
